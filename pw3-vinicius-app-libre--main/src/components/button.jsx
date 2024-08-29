@@ -1,4 +1,4 @@
-import style from './button.module.css'
+import style from './Button.module.css'
 
 
 const Button =({label}) =>{

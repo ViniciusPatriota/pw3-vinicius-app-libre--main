@@ -1,27 +1,31 @@
+/* IMPORTA O CSS */
 import './App.css'
 
-// import CardBooks from './components/CardBooks'
+//IMPORTA O COMPONENTE CONTAINER
+import Container from './components/layout/Conteiner'
+
+//IMPORTA O COMPONENTE NAVBAR
 import NavBar from './components/layout/NavBar'
+
+//IMPORTA O COMPONENTE DE PAG HOME
+import Home from './components/pages/Home'
+
+
+//IMPORTA A IMAGEM DA CAPA DO LIVRO
 import capaLivro from './assets/cavernas_aco.jpg'
  
 function App() {
  
  
   return (
-    // <div className='nsei' >
+    <>
+    
+      <NavBar></NavBar>
+      <Container>
+        <Home/>
+      </Container>
 
-    //   <div>
-    //    <CardBooks
-    //   titulo ='Cavernas de Aço'
-    //   autor= 'Isaac Asimov'
-    //   imagem={capaLivro}
-    //   />
-    //   </div>
-    //   <div>
-    //   </div>
-    // </div>
-    <NavBar></NavBar>
-  
+    </>
   )
 }
  
