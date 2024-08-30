@@ -16,8 +16,8 @@ img:hover {
     background-color: rgb(78, 78, 78);
 
     -ms-transform: scale(1.02); /* IE 9 */
-  -webkit-transform: scale(1.02); /* Safari 3-8 */
-  transform: scale(1.02);
+    -webkit-transform: scale(1.02); /* Safari 3-8 */
+    transform: scale(1.02);
   }
 .card{
     
