@@ -16,11 +16,11 @@ const NavBar =()=>{
                 <li className={style.item}>HOME</li>
                 </Link>
 
-                <Link to='createBook'>
+                <Link to='/createBooks'>
                 <li className={style.item}>ADD BOOKS</li>
                 </Link>
 
-                <Link to='listBook'>
+                <Link to='/listBooks'>
                 <li className={style.item}>LIST BOOKS</li>
                 </Link>
             </ul>
