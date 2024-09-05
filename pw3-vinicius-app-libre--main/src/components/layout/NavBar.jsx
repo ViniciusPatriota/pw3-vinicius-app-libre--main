@@ -17,11 +17,11 @@ const NavBar =()=>{
                 </Link>
 
                 <Link to='/createBooks'>
-                <li className={style.item}>ADD BOOKS</li>
+                <li className={style.item}>CADASTRAR LIVROS</li>
                 </Link>
 
                 <Link to='/listBooks'>
-                <li className={style.item}>LIST BOOKS</li>
+                <li className={style.item}>LISTAR LIVROS</li>
                 </Link>
             </ul>
         </nav>
