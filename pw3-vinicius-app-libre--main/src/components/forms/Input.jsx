@@ -1,5 +1,4 @@
 import style from './Input.module.css'
-
 function Input({type, text, name, placeHolder}){
     return(
         <>
