@@ -1,9 +1,11 @@
-import style from ';/Button.module.css'
+import style from './Button.module.css'
 
-function Button(){
+function Button({rotulo}){
     return(
         <>
-
+            <div>
+                <button className={style.button}>{rotulo}</button>
+            </div>
         </>
     )
 }

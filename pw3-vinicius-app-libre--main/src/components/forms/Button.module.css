@@ -9,7 +9,7 @@ button{
     font-weight: bold;
     font-size: 1.2em;
     cursor: pointer;
-    transition: .4s;
+    transition: 1s;
 }
 
 button:hover{

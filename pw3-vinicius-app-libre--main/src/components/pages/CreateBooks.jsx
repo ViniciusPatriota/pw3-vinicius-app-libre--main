@@ -1,5 +1,7 @@
 import React from "react";
 import Input from '../forms/Input';
+import Select from "../forms/Select";
+import Button from "../forms/Button";
 
 import style from "./CreateBooks.module.css";
 
@@ -26,6 +28,13 @@ const CreateBooks = () => {
                 name='txt_descricao_livro'
                 text='Descrição do livro'
                 placeHolder='Digite a descrição do livro'           
+            />
+            <Select
+                name='categoria'
+                text='Escolha uma categoria de livro'
+            />
+            <Button
+                rotulo='Cadastrar Livro'
             />
         
         </section>
