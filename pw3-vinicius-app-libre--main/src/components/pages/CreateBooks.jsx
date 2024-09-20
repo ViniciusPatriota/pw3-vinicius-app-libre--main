@@ -1,44 +1,70 @@
 import React from "react";
-import Input from '../forms/Input';
+import { useState, useEffect } from "react";
+import style from './CreateBooks.module.css';
+import Input from "../forms/Input";
 import Select from "../forms/Select";
 import Button from "../forms/Button";
 
-import style from "./CreateBooks.module.css";
-
 const CreateBooks = () => {
-    return(
-        <section className={style.create_book_container}>
+    /* RECUPERA DOS DADOS DA APIREST */
+    useEffect( ()=>{
+        fetch('http://localhost:5000/listagemCateorias', {
+            method: 'GET',
+            headers:{
+                'Content-Type':'application/json',
+                'Access-Control-Allow-Origin':'*',
+                'Access-Control-Allow-Headers':'*',
+            }
+        })
+        .then(
+            (resp)=>
+                //console.log('RESPOSTA' + resp)
+                resp.json()
             
-            <h1>CADASTRO DE LIVROS</h1>
+        ).then(
+            (data)=>{
+                console.log(' DATA: ' + data.data[0].nome_categoria)
+            }
+        ).catch(
+            (error)=>{
+                console.log(error)
+            }
+        )
+    },[]);
 
-            <Input
+    return (
+        <section className={style.create_book_container}>
+            <h1>CADASTRO DE LIVROS</h1>
+            <Input 
                 type='text'
                 name='txt_livro'
-                text='Título do Livro'
-                placeHolder='Digite o nome do seu livro aqui'           
+                placeHolder='Digite o nome o seu livro aqui'
+                text='Título do livro'
             />
-            <Input
+            <Input 
                 type='text'
-                name='txt_autor'
+                name='txt_livro'
+                placeHolder='Digite o nome do autor'
                 text='Nome do autor'
-                placeHolder='Digite o nome do ator aqui'           
             />
-            <Input
+            <Input 
                 type='text'
-                name='txt_descricao_livro'
+                name='txt_livro'
+                placeHolder='Digite a descrição do livro'
                 text='Descrição do livro'
-                placeHolder='Digite a descrição do livro'           
             />
-            <Select
-                name='categoria'
+
+            <Select 
+                name='Categoria'
                 text='Escolha uma categoria de livro'
             />
-            <Button
+
+            <Button 
                 rotulo='Cadastrar Livro'
             />
-        
         </section>
-    )
-}
+    );
+};
+
 
 export default CreateBooks
