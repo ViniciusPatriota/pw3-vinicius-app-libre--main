@@ -2,7 +2,7 @@
 import './App.css'
 
 //IMPORTA O COMPONENTE CONTAINER
-import Container from './components/layout/Conteiner'
+import Container from './components/layout/Container'
 
 //IMPORTA O COMPONENTE NAVBAR
 import NavBar from './components/layout/NavBar'

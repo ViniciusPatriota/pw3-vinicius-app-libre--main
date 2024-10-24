@@ -1,5 +1,5 @@
 button{
-    background-color: #1646A0;
+    background-color:blueviolet;
     color: #FFF;
     padding: 0 45px;
     border: 2px solid #FFF;
@@ -9,7 +9,7 @@ button{
     font-weight: bold;
     font-size: 1.2em;
     cursor: pointer;
-    transition: 1s;
+    transition: .4s;
 }
 
 button:hover{

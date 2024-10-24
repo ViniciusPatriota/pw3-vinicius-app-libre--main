@@ -1,25 +1,26 @@
 /* CONTAINER DO MENU */
 .navbar{
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    background-color: darkblue;
+    background-color: blueviolet;
     padding: 1em;
 }
 
-/* REGRAS DA LISTA DE LINKS */
+/* REGRA DA LISTA DE LIVROS */
 .list{
-    display:flex;
+    display: flex;
     list-style: none;
     align-items: center;
     justify-content: space-between;
 }
 
-/* REGRAS DOS LINKS */
+/* REGRAS DE LINKS */
 .item{
     margin-right: 1em;
-    color: #FFF;
+    color: #fff;
 }
+
+/* REGRA DE TAMANHO DA IMAGEM LOGO */
 .logo{
-    width: 120px;
-    
+    width: 120PX;
 }
