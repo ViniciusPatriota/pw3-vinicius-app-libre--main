@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 
 import BookCard from '../CardBooks'
 
-import cavernas from '../../assets/cavernas_aco.jpg'
+import cavernas from '../../assets/livro/cavernas_aco.jpg'
 
 const ListBooks = () => {
     /* CRIAÇAO DO STATE DOS DADOS DOS LIVROS */
