@@ -102,7 +102,7 @@ const CreateBooks = () => {
                     name='nome_livro'
                     placeHolder='Digite o nome do seu livro aqui'
                     text='Titulo do livro'
-                    handlerChangeBookProp={handlerChangeBook}
+                    handlerChangeBook={handlerChangeBook}
                 />
 
                 <Input
@@ -110,7 +110,7 @@ const CreateBooks = () => {
                     name='autor_livro'
                     placeHolder='Digite o nome do autor'
                     text='Nome do autor'
-                    handlerChangeBookProp={handlerChangeBook}
+                    handlerChangeBook={handlerChangeBook}
                 />
 
                 <Input
@@ -118,7 +118,7 @@ const CreateBooks = () => {
                     name='descricao_livro'
                     placeHolder='Digite a descrição do livro'
                     text='Descrição do livro'
-                    handlerChangeBookProp={handlerChangeBook}
+                    handlerChangeBook={handlerChangeBook}
                 />
 
                 <Select
